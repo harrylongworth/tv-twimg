@@ -10,7 +10,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Twine Images" startnode="1" creator="Twine" creator-version="2.0.8" ifid="6D824C73-E051-434A-B0B1-63959E7B85EF" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home" tags="" position="512,300">#Example with images
+<tw-storydata name="Twine Images" startnode="1" creator="Twine" creator-version="2.0.8" ifid="6D824C73-E051-434A-B0B1-63959E7B85EF" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home" tags="" position="478,87">#Example with images
 
 ##Local Image
 
@@ -19,7 +19,49 @@
 ##External Image
 
 &lt;img src=&quot;http://google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png&quot; alt=&quot;Google&quot; width=&quot;272px&quot; height&quot;92px&quot;&gt;
-</tw-passagedata></tw-storydata>
+
+[[css images]]
+
+</tw-passagedata><tw-passagedata pid="2" name="css images" tags="" position="480,221">Using a background attribute
+
+&lt;div style=&quot;width:200px;height:200px;background-color:red;&quot;&gt;Div Content&lt;/div&gt;
+
+&lt;div style=&quot;width:200px;
+		height:200px;
+        background:url(images/1.jpg);
+        color: red;&quot;&gt;With Background Image&lt;/div&gt;
+        
+        
+ [[Background Image]]
+ 
+ </tw-passagedata><tw-passagedata pid="3" name="Background Image" tags="" position="480,371">With a background image
+
+&lt;style&gt;
+  body { background: url(images/2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  
+  }
+  &lt;/style&gt;
+  
+  [[Background SVG]]
+  
+  </tw-passagedata><tw-passagedata pid="4" name="Background SVG" tags="" position="480,521">With background SVG
+
+&lt;style&gt;
+  body { background: url(images/11.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  
+  }
+  &lt;/style&gt;
+  </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
